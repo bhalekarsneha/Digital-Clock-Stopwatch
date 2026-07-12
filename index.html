@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock & Stopwatch</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1><i class="fa-regular fa-clock"></i> Digital Clock & Stopwatch</h1>
+            <p>Real-Time Clock & Precision Stopwatch</p>
+        </header>
+
+        <!-- Digital Clock -->
+        <section class="clock-card">
+
+            <h2>
+                <i class="fa-solid fa-clock"></i>
+                Digital Clock
+            </h2>
+
+            <div id="time" class="time">
+                00:00:00
+            </div>
+
+            <div id="ampm" class="ampm">
+                AM
+            </div>
+
+            <div id="date" class="date">
+                Monday, 01 January 2026
+            </div>
+
+        </section>
+
+        <!-- Stopwatch -->
+        <section class="stopwatch-card">
+
+            <h2>
+                <i class="fa-solid fa-stopwatch"></i>
+                Stopwatch
+            </h2>
+
+            <div id="stopwatch" class="stopwatch">
+                00:00:00.000
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <button id="startBtn">
+                    <i class="fa-solid fa-play"></i>
+                    Start
+                </button>
+
+                <button id="pauseBtn">
+                    <i class="fa-solid fa-pause"></i>
+                    Pause
+                </button>
+
+                <button id="resetBtn">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    Reset
+                </button>
+
+                <button id="lapBtn">
+                    <i class="fa-solid fa-flag"></i>
+                    Lap
+                </button>
+
+            </div>
+
+            <!-- Lap List -->
+            <div class="lap-container">
+
+                <h3>
+                    <i class="fa-solid fa-list"></i>
+                    Lap Times
+                </h3>
+
+                <ul id="lapList">
+                    <!-- Laps will appear here -->
+                </ul>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 Digital Clock & Stopwatch |
+            Built with HTML, CSS & JavaScript
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
